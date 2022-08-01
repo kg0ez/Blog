@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1700.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{269BC6AB-30A7-4555-A8C3-99EB336AFB93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog", "Blog\Blog.csproj", "{35083016-1570-4F46-9773-18AF47E3EF59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35083016-1570-4F46-9773-18AF47E3EF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35083016-1570-4F46-9773-18AF47E3EF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35083016-1570-4F46-9773-18AF47E3EF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35083016-1570-4F46-9773-18AF47E3EF59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FA4370E-186F-4D5C-8915-7E40E0CF3B87}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35083016-1570-4F46-9773-18AF47E3EF59} = {269BC6AB-30A7-4555-A8C3-99EB336AFB93}
+	EndGlobalSection
+EndGlobal
