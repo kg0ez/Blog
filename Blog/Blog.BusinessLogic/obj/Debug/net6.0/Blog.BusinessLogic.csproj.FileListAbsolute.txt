@@ -1,0 +1,17 @@
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.BusinessLogic.deps.json
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.BusinessLogic.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.BusinessLogic.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.Common.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.Model.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.Model.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.Common.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.csproj.AssemblyReference.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.AssemblyInfoInputs.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.AssemblyInfo.cs
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.csproj.CoreCompileInputs.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.csproj.CopyComplete
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/refint/Blog.BusinessLogic.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/ref/Blog.BusinessLogic.dll

@@ -1,0 +1,12 @@
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/bin/Debug/net6.0/Blog.Common.deps.json
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/bin/Debug/net6.0/Blog.Common.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/bin/Debug/net6.0/Blog.Common.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/Blog.Common.csproj.AssemblyReference.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/Blog.Common.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/Blog.Common.AssemblyInfoInputs.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/Blog.Common.AssemblyInfo.cs
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/Blog.Common.csproj.CoreCompileInputs.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/Blog.Common.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/refint/Blog.Common.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/Blog.Common.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.Common/obj/Debug/net6.0/ref/Blog.Common.dll
