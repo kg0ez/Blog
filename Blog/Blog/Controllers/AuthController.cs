@@ -29,9 +29,7 @@ namespace Blog.Controllers
         {
             if (_verification.IsExists(user.Username))
                 return BadRequest("Correspondent with the same username is already registered");
-            _auth.IsCreate(user);
-
-            return Ok("Correspondent was regisrered");
+            return _auth.IsCreate(user)? Ok("Correspondent was regisrered") : BadRequest("Failed to create account");
         }
 
         [HttpPost("login")]
@@ -42,9 +40,9 @@ namespace Blog.Controllers
             if (!_verification.IsVerifyPasswordHash(user))
                 return BadRequest("Wrong password");
 
-            string token = _tokenService.CreateToken(user);
+            string token = _tokenService.Create(user);
 
-            return Ok("sex");
+            return Ok(token);
         }
     }
 

@@ -11,10 +11,12 @@ namespace Blog.BusinessLogic.Services.Implementations
 	public class VerificationService: IVerificationService
 	{
         private readonly ApplicationContext _db;
+        private readonly IInteractionDBService _dBService;
 
 		public VerificationService(ApplicationContext context)
 		{
             _db = context;
+            _dBService = new InteractionDBService(context);
 		}
 
         public void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
@@ -36,7 +38,7 @@ namespace Blog.BusinessLogic.Services.Implementations
         //}
         public bool IsVerifyPasswordHash(BaseDto user)
         {
-            var correspond = _db.Correspondents.AsNoTracking().FirstOrDefault(c => c.Username == user.Username)!;
+            var correspond = _dBService.Get(user.Username)!;
             using (var hmac = new HMACSHA256(correspond.PasswordSalt))
             {
                 var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(user.Password));

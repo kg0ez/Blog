@@ -1,4 +1,5 @@
 ﻿using System;
+using AutoMapper;
 using Blog.BusinessLogic.Services.Interfaces;
 using Blog.Common.DTOs;
 using Blog.Model.Data;
@@ -10,10 +11,12 @@ namespace Blog.BusinessLogic.Services.Implementations
 	public class CorrespondService: ICorrespondService
 	{
         private readonly ApplicationContext _db;
+        private readonly IMapper _mapper;
 
-		public CorrespondService(ApplicationContext context)
+		public CorrespondService(ApplicationContext context,IMapper mapper)
 		{
             _db = context;
+            _mapper = mapper;
 		}
 
         public bool IsDelete(int id)
@@ -28,30 +31,14 @@ namespace Blog.BusinessLogic.Services.Implementations
         private bool Save() =>
             _db.SaveChanges() > 0 ? true : false;
 
-        public Correspondent Get(string username)
-        {
-            throw new NotImplementedException();
-        }
+        public ViewDto Get(string username)=>
+            _mapper.Map<ViewDto>(_db.Correspondents.AsNoTracking().FirstOrDefault(c => c.Username == username));
 
-        public Correspondent Get(int id)
-        {
-            throw new NotImplementedException();
-        }
+        public ViewDto Get(int id)=>
+            _mapper.Map<ViewDto>(_db.Correspondents.AsNoTracking().FirstOrDefault(c => c.Id == id));
 
-        public IEnumerable<BaseDto> Get()
-        {
-            throw new NotImplementedException();
-        }
-
-        public CorrespondentDto Login(BaseDto loginDto)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool IsRegister(BaseDto registerDto, RefreshTokenDto tokenDto)
-        {
-            throw new NotImplementedException();
-        }
+        public IEnumerable<ViewDto> Get()=>
+            _mapper.Map<List<ViewDto>>(_db.Correspondents.AsNoTracking().ToList());
 
         public void Update(Correspondent user, RefreshTokenDto tokenDto)
         {

@@ -18,6 +18,8 @@ namespace Blog.BusinessLogic.Helper.Mapper
 				.ForMember("Username", opt => opt.MapFrom(ud => ud.Username.ToLower()))
 				.ForMember("PasswordHash", opt => opt.MapFrom(ud => hmac.ComputeHash(Encoding.UTF8.GetBytes(ud.Password))))
 				.ForMember("PasswordSalt", opt => opt.MapFrom(ud => hmac.Key));
+			CreateMap<Correspondent, ViewDto>()
+				.ForMember("Name", opt => opt.MapFrom(opt =>opt.Id+" "+ opt.Username));
 		}
 	}
 }

@@ -5,12 +5,10 @@ namespace Blog.BusinessLogic.Services.Interfaces
 {
 	public interface ICorrespondService
 	{
-		bool IsRegister(BaseDto registerDto, RefreshTokenDto tokenDto);
-		CorrespondentDto Login(BaseDto loginDto);
 		void Update(Correspondent user, RefreshTokenDto tokenDto);
-		Correspondent Get(string username);
-		Correspondent Get(int id);
-		IEnumerable<BaseDto> Get();
+		ViewDto Get(string username);
+		ViewDto Get(int id);
+		IEnumerable<ViewDto> Get();
 		bool IsDelete(int id);
 	}
 }
