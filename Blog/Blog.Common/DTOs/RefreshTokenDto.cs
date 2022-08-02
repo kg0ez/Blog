@@ -1,5 +1,4 @@
-﻿using System;
-namespace Blog.Common.DTOs
+﻿namespace Blog.Common.DTOs
 {
 	public class RefreshTokenDto
 	{

@@ -1,6 +1,4 @@
 ﻿using System.Text;
-using AutoMapper;
-using Blog.BusinessLogic.Helper.Mapper;
 using Blog.BusinessLogic.Services.Implementations;
 using Blog.BusinessLogic.Services.Interfaces;
 using Blog.Model.Data;
@@ -14,9 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 var connection = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlServer(connection,
     opt => opt.MigrationsAssembly("Blog")));
-
-var mappingConfig = new MapperConfiguration(mc =>
-    mc.AddProfile(new MappingProfile()));
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
@@ -37,6 +32,7 @@ builder.Services.AddTransient<ITokenService, TokenService>();
 builder.Services.AddTransient<IAuthService, AuthService>();
 builder.Services.AddTransient<ICorrespondService, CorrespondService>();
 builder.Services.AddTransient<IVerificationService, VerificationService>();
+builder.Services.AddTransient<IBlogService, BlogService>();
 
 builder.Services.AddControllers();
 

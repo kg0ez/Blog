@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using Blog.BusinessLogic.Services.Interfaces;
 using Blog.Common.DTOs;
 using Blog.Model.Data;
@@ -20,12 +19,6 @@ namespace Blog.BusinessLogic.Services.Implementations
             _dBService = new InteractionDBService(context);
 		}
 
-        //public bool IsCreate(RegisterDto user)
-        //{
-        //    var correspond = _mapper.Map<User>(user);
-        //    _db.Users.Add(correspond);
-        //    return Save();
-        //}
         public bool IsRegister(RegisterDto dto, RefreshTokenDto tokenDto)
         {
             var user = _mapper.Map<User>(dto);
@@ -37,9 +30,6 @@ namespace Blog.BusinessLogic.Services.Implementations
         {
             var user = _dBService.Get(dto.Username);
             return _dBService.SetREfToken(user, tokenDto);
-            //_db.Users.Update(_dBService.UpdateDataToken(user, tokenDto));
-            //return Save()? Environment.NewLine + "RefreshToken: " + user.RefreshToken :
-            //    "RefreshToken was not created";
         }
         
     }

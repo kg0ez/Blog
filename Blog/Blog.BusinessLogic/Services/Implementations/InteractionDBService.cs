@@ -1,5 +1,4 @@
-﻿using System;
-using Blog.BusinessLogic.Services.Interfaces;
+﻿using Blog.BusinessLogic.Services.Interfaces;
 using Blog.Common.DTOs;
 using Blog.Model.Data;
 using Blog.Model.Models;
@@ -18,6 +17,9 @@ namespace Blog.BusinessLogic.Services.Implementations
 
 		public User Get(string username)=>
 			_db.Users.AsNoTracking().FirstOrDefault(c => c.Username == username)!;
+
+		public User Get(int id)=>
+			_db.Users.AsNoTracking().FirstOrDefault(c => c.Id == id)!;
 
 		public User UpdateDataToken(User user, RefreshTokenDto tokenDto)
 		{

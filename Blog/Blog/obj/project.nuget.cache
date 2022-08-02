@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "oRYDmL6Ez2HKfC5mT6w06jIo5Du2EL9deq/C4pJiKNmt8B/YfpwHPd/qvSyp85NMFtBW8eX7ZrbnF9MUaHod1w==",
+  "dgSpecHash": "KNO2Cn3ffXl2M5uaNKU2wSTyMJfahSyg+0Ms8MHBgVxbt5E7dytMEa4x7/RbXnstqm9jlxXEXns+da0/SGmZOQ==",
   "success": true,
   "projectFilePath": "/Users/kirill/Desktop/Blog/Blog/Blog/Blog.csproj",
   "expectedPackageFiles": [
     "/Users/kirill/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/Users/kirill/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/11.0.0/automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "/Users/kirill/.nuget/packages/htmlagilitypack/1.11.43/htmlagilitypack.1.11.43.nupkg.sha512",
     "/Users/kirill/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/kirill/.nuget/packages/jwt/9.0.3/jwt.9.0.3.nupkg.sha512",
     "/Users/kirill/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.7/microsoft.aspnetcore.authentication.jwtbearer.6.0.7.nupkg.sha512",

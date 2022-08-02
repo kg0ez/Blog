@@ -1,5 +1,4 @@
-﻿using System;
-namespace Blog.Model.Models
+﻿namespace Blog.Model.Models
 {
 	public class Topic
 	{

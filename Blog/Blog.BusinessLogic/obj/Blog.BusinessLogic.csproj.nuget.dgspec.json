@@ -31,6 +31,9 @@
               },
               "/Users/kirill/Desktop/Blog/Blog/Blog.Model/Blog.Model.csproj": {
                 "projectPath": "/Users/kirill/Desktop/Blog/Blog/Blog.Model/Blog.Model.csproj"
+              },
+              "/Users/kirill/Desktop/Blog/Blog/Blog.Parser/Blog.Parser.csproj": {
+                "projectPath": "/Users/kirill/Desktop/Blog/Blog/Blog.Parser/Blog.Parser.csproj"
               }
             }
           }
@@ -172,6 +175,68 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/kirill/Desktop/Blog/Blog/Blog.Parser/Blog.Parser.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/kirill/Desktop/Blog/Blog/Blog.Parser/Blog.Parser.csproj",
+        "projectName": "Blog.Parser",
+        "projectPath": "/Users/kirill/Desktop/Blog/Blog/Blog.Parser/Blog.Parser.csproj",
+        "packagesPath": "/Users/kirill/.nuget/packages/",
+        "outputPath": "/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/kirill/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/kirill/Desktop/Blog/Blog/Blog.Common/Blog.Common.csproj": {
+                "projectPath": "/Users/kirill/Desktop/Blog/Blog/Blog.Common/Blog.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.43, )"
             }
           },
           "imports": [

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Blog.BusinessLogic.Services.Interfaces;
+using Blog.Common.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Blog.Controllers
 {
@@ -13,37 +9,25 @@ namespace Blog.Controllers
     [ApiController,Authorize]
     public class BlogController : ControllerBase
     {
-        // GET: api/values
+        private readonly IBlogService _blog;
+        public BlogController(IBlogService blog)=>
+            _blog = blog;
+
         [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        public IEnumerable<TopicDto> Get()=>
+            _blog.Get();
 
-        // GET api/values/5
         [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        public IActionResult Get(int id)=>
+            Ok(_blog.Get(id));
 
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        public IActionResult Delete(int id)=>
+            _blog.IsDelete(id)? Ok("Blog was succesfully deleted") : BadRequest("Failed to delete blog");
+
+        [HttpPost("Update")]
+        public void Update()=>
+            _blog.AddRange();
     }
 }
 

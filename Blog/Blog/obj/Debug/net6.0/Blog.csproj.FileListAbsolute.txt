@@ -71,3 +71,6 @@
 /Users/kirill/Desktop/Blog/Blog/Blog/obj/Debug/net6.0/ref/Blog.dll
 /Users/kirill/Desktop/Blog/Blog/Blog/bin/Debug/net6.0/Humanizer.dll
 /Users/kirill/Desktop/Blog/Blog/Blog/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/kirill/Desktop/Blog/Blog/Blog/bin/Debug/net6.0/HtmlAgilityPack.dll
+/Users/kirill/Desktop/Blog/Blog/Blog/bin/Debug/net6.0/Blog.Parser.dll
+/Users/kirill/Desktop/Blog/Blog/Blog/bin/Debug/net6.0/Blog.Parser.pdb

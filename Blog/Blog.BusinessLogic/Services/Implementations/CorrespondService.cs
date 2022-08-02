@@ -1,5 +1,4 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using Blog.BusinessLogic.Services.Interfaces;
 using Blog.Common.DTOs;
 using Blog.Model.Data;

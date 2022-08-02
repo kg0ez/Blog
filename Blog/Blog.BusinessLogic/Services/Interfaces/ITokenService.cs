@@ -1,6 +1,4 @@
-﻿using System;
-using Blog.Common.DTOs;
-using Blog.Model.Models;
+﻿using Blog.Common.DTOs;
 
 namespace Blog.BusinessLogic.Services.Interfaces
 {

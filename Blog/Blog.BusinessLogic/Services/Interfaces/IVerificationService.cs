@@ -1,5 +1,4 @@
-﻿using System;
-using Blog.Common.DTOs;
+﻿using Blog.Common.DTOs;
 
 namespace Blog.BusinessLogic.Services.Interfaces
 {
@@ -9,8 +8,6 @@ namespace Blog.BusinessLogic.Services.Interfaces
 		bool IsExists(int id);
 		void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt);
 		bool IsVerifyPasswordHash(LoginDto user);
-		
-		//bool IsVerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt);
 	}
 }
 

@@ -29,5 +29,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Blog.Model\Blog.Model.csproj" />
     <ProjectReference Include="..\Blog.Common\Blog.Common.csproj" />
+    <ProjectReference Include="..\Blog.Parser\Blog.Parser.csproj" />
   </ItemGroup>
 </Project>

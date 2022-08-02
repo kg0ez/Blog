@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using AutoMapper;
 using Blog.Common.DTOs;
 using Blog.Model.Models;
@@ -13,7 +12,7 @@ namespace Blog.BusinessLogic.Helper.Mapper
         {
 			var hmac = new HMACSHA256();
 
-            CreateMap<Topic, TopicDto>().ReverseMap();
+			CreateMap<Topic, TopicDto>();
 			CreateMap<RegisterDto, User>()
 				.ForMember("Username", opt => opt.MapFrom(opt => opt.Username.ToLower()))
 				.ForMember("PasswordHash", opt => opt.MapFrom(opt => hmac.ComputeHash(Encoding.UTF8.GetBytes(opt.Password))))
@@ -22,7 +21,10 @@ namespace Blog.BusinessLogic.Helper.Mapper
 			CreateMap<User, ViewDto>()
 				.ForMember("Name", opt => opt.MapFrom(opt =>opt.Id+" "+ opt.Username))
 				.ForMember("Role", opt => opt.MapFrom(opt =>opt.Role));
-		}
+			CreateMap<TopicDto, Topic>()
+				.ForMember("CorrespondentId", opt => opt.MapFrom(opt => 1))
+				.ForMember("Subtitle", opt => opt.MapFrom(opt => opt.Subtitle));
+        }
 	}
 }
 

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Security.Cryptography;
+﻿using System.Security.Cryptography;
 using System.Text;
 using Blog.BusinessLogic.Services.Interfaces;
 using Blog.Common.DTOs;
 using Blog.Model.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace Blog.BusinessLogic.Services.Implementations
 {
@@ -28,14 +26,6 @@ namespace Blog.BusinessLogic.Services.Implementations
             }
         }
 
-        //public bool IsVerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
-        //{
-        //    using (var hmac = new HMACSHA256(passwordSalt))
-        //    {
-        //        var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
-        //        return computedHash.SequenceEqual(passwordHash);
-        //    }
-        //}
         public bool IsVerifyPasswordHash(LoginDto user)
         {
             var correspond = _dBService.Get(user.Username)!;
@@ -45,7 +35,7 @@ namespace Blog.BusinessLogic.Services.Implementations
                 return computedHash.SequenceEqual(correspond.PasswordHash);
             }
         }
-
+        
         public bool IsExists(string username)=>
             _db.Users.Any(c => c.Username == username);
 

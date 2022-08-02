@@ -15,3 +15,5 @@
 /Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/refint/Blog.BusinessLogic.dll
 /Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/Blog.BusinessLogic.pdb
 /Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/obj/Debug/net6.0/ref/Blog.BusinessLogic.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.Parser.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.BusinessLogic/bin/Debug/net6.0/Blog.Parser.pdb
