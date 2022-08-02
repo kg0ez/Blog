@@ -7,7 +7,7 @@ namespace Blog.BusinessLogic.Services.Interfaces
 	{
 		bool IsExists(string username);
 		void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt);
-		bool IsVerifyPasswordHash(BaseDto user);
+		bool IsVerifyPasswordHash(LoginDto user);
 		//bool IsVerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt);
 	}
 }

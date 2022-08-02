@@ -3,9 +3,9 @@ using Blog.Model.Models;
 
 namespace Blog.BusinessLogic.Services.Interfaces
 {
-	public interface IInteractionDBService
+	internal interface IInteractionDBService
 	{
-		Correspondent Get(string username);
+		User Get(string username);
 	}
 }
 

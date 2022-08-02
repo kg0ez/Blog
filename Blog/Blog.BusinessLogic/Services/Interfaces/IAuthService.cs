@@ -5,7 +5,7 @@ namespace Blog.BusinessLogic.Services.Interfaces
 {
 	public interface IAuthService
 	{
-		bool IsCreate(BaseDto user);
+		bool IsCreate(RegisterDto user);
 	}
 }
 

@@ -8,8 +8,6 @@ using Blog.Common.DTOs;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace Blog.Controllers
 {
     [Route("api/[controller]")]
@@ -40,6 +38,7 @@ namespace Blog.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles ="admin")]
         public IActionResult Delete(int id)=>
             _correspond.IsDelete(id) ? Ok("Account was succesfully deleted") : BadRequest("Failed to delete account");
     }

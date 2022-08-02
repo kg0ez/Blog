@@ -6,7 +6,7 @@ namespace Blog.BusinessLogic.Services.Interfaces
 {
 	public interface ITokenService
 	{
-		string Create(BaseDto dto);
+		string Create(LoginDto dto);
 	}
 }
 

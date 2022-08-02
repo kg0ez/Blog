@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Blog.BusinessLogic.Services.Implementations;
-using Blog.BusinessLogic.Services.Interfaces;
+﻿using Blog.BusinessLogic.Services.Interfaces;
 using Blog.Common.DTOs;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,18 +20,18 @@ namespace Blog.Controllers
         }
 
         [HttpPost("register")]
-        public IActionResult Register(BaseDto user)
+        public IActionResult Register(RegisterDto user)
         {
             if (_verification.IsExists(user.Username))
-                return BadRequest("Correspondent with the same username is already registered");
-            return _auth.IsCreate(user)? Ok("Correspondent was regisrered") : BadRequest("Failed to create account");
+                return BadRequest("User with the same username is already registered");
+            return _auth.IsCreate(user)? Ok("User was regisrered") : BadRequest("Failed to create account");
         }
 
         [HttpPost("login")]
-        public IActionResult Login(BaseDto user)
+        public IActionResult Login(LoginDto user)
         {
             if (!_verification.IsExists(user.Username))
-                return BadRequest("Correspondent not found");
+                return BadRequest("User not found");
             if (!_verification.IsVerifyPasswordHash(user))
                 return BadRequest("Wrong password");
 

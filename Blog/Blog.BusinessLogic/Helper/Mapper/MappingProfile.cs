@@ -14,11 +14,12 @@ namespace Blog.BusinessLogic.Helper.Mapper
 			var hmac = new HMACSHA256();
 
             CreateMap<Topic, TopicDto>().ReverseMap();
-			CreateMap<BaseDto, Correspondent>()
-				.ForMember("Username", opt => opt.MapFrom(ud => ud.Username.ToLower()))
-				.ForMember("PasswordHash", opt => opt.MapFrom(ud => hmac.ComputeHash(Encoding.UTF8.GetBytes(ud.Password))))
-				.ForMember("PasswordSalt", opt => opt.MapFrom(ud => hmac.Key));
-			CreateMap<Correspondent, ViewDto>()
+			CreateMap<RegisterDto, User>()
+				.ForMember("Username", opt => opt.MapFrom(opt => opt.Username.ToLower()))
+				.ForMember("PasswordHash", opt => opt.MapFrom(opt => hmac.ComputeHash(Encoding.UTF8.GetBytes(opt.Password))))
+				.ForMember("PasswordSalt", opt => opt.MapFrom(opt => hmac.Key))
+				.ForMember("Role", opt => opt.MapFrom(opt => opt.Role.ToLower()));
+			CreateMap<User, ViewDto>()
 				.ForMember("Name", opt => opt.MapFrom(opt =>opt.Id+" "+ opt.Username));
 		}
 	}

@@ -21,10 +21,10 @@ namespace Blog.BusinessLogic.Services.Implementations
 
         public bool IsDelete(int id)
         {
-            var coresp = _db.Correspondents.FirstOrDefault(x => x.Id == id);
+            var coresp = _db.Users.FirstOrDefault(x => x.Id == id);
             if (coresp == null)
                 return false;
-            _db.Correspondents.Remove(coresp);
+            _db.Users.Remove(coresp);
             return Save();
         }
 
@@ -32,15 +32,15 @@ namespace Blog.BusinessLogic.Services.Implementations
             _db.SaveChanges() > 0 ? true : false;
 
         public ViewDto Get(string username)=>
-            _mapper.Map<ViewDto>(_db.Correspondents.AsNoTracking().FirstOrDefault(c => c.Username == username));
+            _mapper.Map<ViewDto>(_db.Users.AsNoTracking().FirstOrDefault(c => c.Username == username));
 
         public ViewDto Get(int id)=>
-            _mapper.Map<ViewDto>(_db.Correspondents.AsNoTracking().FirstOrDefault(c => c.Id == id));
+            _mapper.Map<ViewDto>(_db.Users.AsNoTracking().FirstOrDefault(c => c.Id == id));
 
         public IEnumerable<ViewDto> Get()=>
-            _mapper.Map<List<ViewDto>>(_db.Correspondents.AsNoTracking().ToList());
+            _mapper.Map<List<ViewDto>>(_db.Users.AsNoTracking().ToList());
 
-        public void Update(Correspondent user, RefreshTokenDto tokenDto)
+        public void Update(User user, RefreshTokenDto tokenDto)
         {
             throw new NotImplementedException();
         }

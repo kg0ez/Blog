@@ -23,13 +23,14 @@ namespace Blog.BusinessLogic.Services.Implementations
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
         }
 
-        public string Create(BaseDto dto)
+        public string Create(LoginDto dto)
         {
             var user = _dBService.Get(dto.Username);
 
             var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.NameId,user.Username),
+                new Claim(ClaimsIdentity.DefaultRoleClaimType,user.Role)
             };
             var creds = new SigningCredentials(_key, SecurityAlgorithms.HmacSha256Signature);
 

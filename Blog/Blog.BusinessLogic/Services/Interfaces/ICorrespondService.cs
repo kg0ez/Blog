@@ -5,7 +5,7 @@ namespace Blog.BusinessLogic.Services.Interfaces
 {
 	public interface ICorrespondService
 	{
-		void Update(Correspondent user, RefreshTokenDto tokenDto);
+		void Update(User user, RefreshTokenDto tokenDto);
 		ViewDto Get(string username);
 		ViewDto Get(int id);
 		IEnumerable<ViewDto> Get();

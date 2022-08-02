@@ -36,7 +36,7 @@ namespace Blog.BusinessLogic.Services.Implementations
         //        return computedHash.SequenceEqual(passwordHash);
         //    }
         //}
-        public bool IsVerifyPasswordHash(BaseDto user)
+        public bool IsVerifyPasswordHash(LoginDto user)
         {
             var correspond = _dBService.Get(user.Username)!;
             using (var hmac = new HMACSHA256(correspond.PasswordSalt))
@@ -47,7 +47,7 @@ namespace Blog.BusinessLogic.Services.Implementations
         }
 
         public bool IsExists(string username)=>
-            _db.Correspondents.Any(c => c.Username == username);
+            _db.Users.Any(c => c.Username == username);
     }
 }
 

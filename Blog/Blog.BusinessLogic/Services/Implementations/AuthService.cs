@@ -17,10 +17,10 @@ namespace Blog.BusinessLogic.Services.Implementations
             _db = context;
 		}
 
-        public bool IsCreate(BaseDto user)
+        public bool IsCreate(RegisterDto user)
         {
-            var correspond = _mapper.Map<Correspondent>(user);
-            _db.Correspondents.Add(correspond);
+            var correspond = _mapper.Map<User>(user);
+            _db.Users.Add(correspond);
             return Save();
         }
 

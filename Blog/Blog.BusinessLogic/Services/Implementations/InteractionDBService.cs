@@ -15,8 +15,8 @@ namespace Blog.BusinessLogic.Services.Implementations
 			_db = context;
 		}
 
-		public Correspondent Get(string username)=>
-			_db.Correspondents.AsNoTracking().FirstOrDefault(c => c.Username == username)!;
+		public User Get(string username)=>
+			_db.Users.AsNoTracking().FirstOrDefault(c => c.Username == username)!;
 	}
 }
 

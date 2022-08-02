@@ -8,7 +8,7 @@ namespace Blog.Model.Models
 		public string? Subtitle { get; set; }
 
 		public int CorrespondentId { get; set; }
-		public Correspondent Correspondent { get; set; } = null!;
+		public User Correspondent { get; set; } = null!;
 	}
 }
 
