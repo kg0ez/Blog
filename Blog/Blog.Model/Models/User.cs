@@ -9,12 +9,12 @@ namespace Blog.Model.Models
 		public byte[] PasswordSalt { get; set; }
 		public string Role { get; set; } = null!;
 
-		//public string RefreshToken { get; set; }
-		//public DateTime TokenCreated { get; set; }
-		//public DateTime TokenExpires { get; set; }
-		//Correspondent
+        public string RefreshToken { get; set; }
+        public DateTime TokenCreated { get; set; }
+        public DateTime TokenExpires { get; set; }
+        //Correspondent
 
-		public IEnumerable<Topic> Topics { get; set; }
+        public IEnumerable<Topic> Topics { get; set; }
 
 	}
 }

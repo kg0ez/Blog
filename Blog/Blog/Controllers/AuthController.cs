@@ -24,7 +24,8 @@ namespace Blog.Controllers
         {
             if (_verification.IsExists(user.Username))
                 return BadRequest("User with the same username is already registered");
-            return _auth.IsCreate(user)? Ok("User was regisrered") : BadRequest("Failed to create account");
+            var newRefreshToken = _tokenService.GenerateRefreshToken();
+            return _auth.IsRegister(user,newRefreshToken)? Ok("User was regisrered") : BadRequest("Failed to create account");
         }
 
         [HttpPost("login")]
@@ -37,7 +38,8 @@ namespace Blog.Controllers
 
             string token = _tokenService.Create(user);
 
-            return Ok(token);
+            var refreshToken = _tokenService.GenerateRefreshToken();
+            return Ok("Token: "+ token + _auth.Login(user, refreshToken));
         }
     }
 

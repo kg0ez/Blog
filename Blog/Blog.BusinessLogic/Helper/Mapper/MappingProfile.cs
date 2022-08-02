@@ -20,7 +20,8 @@ namespace Blog.BusinessLogic.Helper.Mapper
 				.ForMember("PasswordSalt", opt => opt.MapFrom(opt => hmac.Key))
 				.ForMember("Role", opt => opt.MapFrom(opt => opt.Role.ToLower()));
 			CreateMap<User, ViewDto>()
-				.ForMember("Name", opt => opt.MapFrom(opt =>opt.Id+" "+ opt.Username));
+				.ForMember("Name", opt => opt.MapFrom(opt =>opt.Id+" "+ opt.Username))
+				.ForMember("Role", opt => opt.MapFrom(opt =>opt.Role));
 		}
 	}
 }

@@ -48,6 +48,11 @@ namespace Blog.BusinessLogic.Services.Implementations
 
         public bool IsExists(string username)=>
             _db.Users.Any(c => c.Username == username);
+
+        public bool IsExists(int id)=>
+            _db.Users.Any(c => c.Id == id);
+
+        
     }
 }
 
