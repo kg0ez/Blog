@@ -1,0 +1,15 @@
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/bin/Debug/net6.0/Blog.Parser.deps.json
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/bin/Debug/net6.0/Blog.Parser.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/bin/Debug/net6.0/Blog.Parser.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/bin/Debug/net6.0/Blog.Common.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/bin/Debug/net6.0/Blog.Common.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/Blog.Parser.csproj.AssemblyReference.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/Blog.Parser.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/Blog.Parser.AssemblyInfoInputs.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/Blog.Parser.AssemblyInfo.cs
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/Blog.Parser.csproj.CoreCompileInputs.cache
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/Blog.Parser.csproj.CopyComplete
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/Blog.Parser.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/refint/Blog.Parser.dll
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/Blog.Parser.pdb
+/Users/kirill/Desktop/Blog/Blog/Blog.Parser/obj/Debug/net6.0/ref/Blog.Parser.dll

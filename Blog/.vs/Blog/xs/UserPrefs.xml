@@ -1,0 +1,84 @@
+﻿<Properties StartupConfiguration="{35083016-1570-4F46-9773-18AF47E3EF59}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Api.Blog PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Blog.Model/Models/User.cs">
+    <Files>
+      <File FileName="Blog.BusinessLogic/Services/Interfaces/IBlogService.cs" Line="2" Column="1" />
+      <File FileName="Blog.BusinessLogic/Services/Implementations/BlogService.cs" Line="1" Column="14" />
+      <File FileName="Blog/Controllers/BlogController.cs" Line="1" Column="1" />
+      <File FileName="Blog.BusinessLogic/Services/Implementations/CorrespondService.cs" Line="37" Column="13" />
+      <File FileName="Blog.BusinessLogic/Services/Interfaces/IVerificationService.cs" Line="10" Column="8" />
+      <File FileName="Blog.BusinessLogic/Services/Implementations/AuthService.cs" Line="1" Column="1" />
+      <File FileName="Blog/Controllers/AuthController.cs" Line="36" Column="45" />
+      <File FileName="Blog.BusinessLogic/Services/Implementations/VerificationService.cs" Line="38" Column="9" />
+      <File FileName="Blog.BusinessLogic/Services/Interfaces/IInteractionDBService.cs" Line="8" Column="8" />
+      <File FileName="Blog.BusinessLogic/Services/Implementations/InteractionDBService.cs" Line="18" Column="3" />
+      <File FileName="Blog.BusinessLogic/Helper/Mapper/MappingProfile.cs" Line="6" Column="1" />
+      <File FileName="Blog/Controllers/CorrespondentController.cs" Line="28" Column="9" />
+      <File FileName="Blog/Program.cs" Line="2" Column="1" />
+      <File FileName="Blog/Controllers/TokenController.cs" Line="1" Column="1" />
+      <File FileName="Blog/appsettings.json" Line="1" Column="1" />
+      <File FileName="Blog.BusinessLogic/Services/Implementations/TokenService.cs" Line="40" Column="12" />
+      <File FileName="Blog.Model/Data/ApplicationContext.cs" Line="1" Column="1" />
+      <File FileName="Blog.Parser/NewsParser.cs" Line="52" Column="6" />
+      <File FileName="Blog.BusinessLogic/Services/Interfaces/IAuthService.cs" Line="1" Column="1" />
+      <File FileName="Blog.BusinessLogic/Services/Interfaces/ICorrespondService.cs" Line="1" Column="1" />
+      <File FileName="Blog.BusinessLogic/Services/Interfaces/ITokenService.cs" Line="1" Column="1" />
+      <File FileName="Blog.Common/DTOs/LoginDto.cs" Line="1" Column="1" />
+      <File FileName="Blog.Common/DTOs/RefreshTokenDto.cs" Line="1" Column="1" />
+      <File FileName="Blog.Common/DTOs/RegisterDto.cs" Line="1" Column="1" />
+      <File FileName="Blog.Common/DTOs/TopicDto.cs" Line="1" Column="1" />
+      <File FileName="Blog.Common/DTOs/UserDto.cs" Line="1" Column="1" />
+      <File FileName="Blog.Common/DTOs/ViewDto.cs" Line="1" Column="1" />
+      <File FileName="Blog.Model/Models/Topic.cs" Line="1" Column="1" />
+      <File FileName="Blog.Model/Models/User.cs" Line="14" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Blog" expanded="True">
+            <Node name="Api" expanded="True">
+              <Node name="Blog" expanded="True">
+                <Node name="Controllers" expanded="True" />
+                <Node name="Migrations" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Business Logic" expanded="True">
+              <Node name="Blog.BusinessLogic" expanded="True">
+                <Node name="Helper" expanded="True">
+                  <Node name="Mapper" expanded="True" />
+                </Node>
+                <Node name="Services" expanded="True">
+                  <Node name="Implementations" expanded="True" />
+                  <Node name="Interfaces" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+            <Node name="Common" expanded="True">
+              <Node name="Blog.Common" expanded="True">
+                <Node name="DTOs" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Infrastructure" expanded="True">
+              <Node name="Blog.Parser" expanded="True" />
+            </Node>
+            <Node name="Model" expanded="True">
+              <Node name="Blog.Model" expanded="True">
+                <Node name="Data" expanded="True" />
+                <Node name="Models" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
